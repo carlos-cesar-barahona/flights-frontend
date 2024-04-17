@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <head>
+      <script type="text/javascript"
+            src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script type="text/javascript"
+            src="https://js.openpay.mx/openpay.v1.min.js"></script>
+    <script type='text/javascript'
+      src="https://js.openpay.mx/openpay-data.v1.min.js"></script> 
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+  <div class="w-100 justify-content-center align-items-center" id="spinner-app" style="height:100vh; background-color: rgba(0, 0, 0, 0.5); position:fixed;top:0;left:0;z-index: 9999;display: none;">
+    <div class="spinner-grow text-primary mr-2" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+    <div class="spinner-grow text-primary mr-2" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+    <div class="spinner-grow text-primary" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>    
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
+
+<style type="text/css">
+  body{
+    background-color: #f7f7f9;
+  }
+</style>
